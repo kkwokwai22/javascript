@@ -72,3 +72,6 @@ extendMethodExampleOne.everyoneHasThisPrototype();
 extendMethodExampleOne.extendMethod();
 
 console.log(extendMethodExampleOne.isPrototypeOf(ProtoTypeExample));
+
+
+

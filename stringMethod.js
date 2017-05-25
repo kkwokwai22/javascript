@@ -26,9 +26,14 @@ console.log("concat method".toUpperCase())
 var firstArray = [1,2,3,4,5,6]
 var secondArray = [1,2,3,4,5,6]
 
+var firstStr = 'hello'
+var secondStr = 'second'
+
 var combineArray = firstArray.concat(secondArray);
 console.log(combineArray);
 
+var combineStr = firstStr.concat(secondStr)
+console.log(combineStr)
 // indexOf
 console.log()
 console.log("indexOf method".toUpperCase())
@@ -90,6 +95,8 @@ console.log(strSlice2);
 
 
 // subStr 
+
+
 // toLowerCase
 // toUpperCase
 // toLocaleLowerCase

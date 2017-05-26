@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>absolute Position</title>
+    <title>fixed Position</title>
 </head>
 <style>
     .wrapper {
@@ -90,10 +90,7 @@
         position: relative;
     }
     
-/*    keep in mindn with absolute position it will remove it from normal document flow */
-    
-/*    so now if i give the banner a position of relative .... the h2 in banner will have absolutely positioning it relative to this banner */
-/*      if you dont set a position relative it will position itself absolutely to the window     */
+
     #banner h2 {
         position: absolute;
         top: 30px;
@@ -102,11 +99,43 @@
         margin: 0;
         color: white;
     }
+    
+    
+    nav {
+        background: #333;
+        padding: 5px;
+        position: fixed;
+        top:0;
+        left:0;
+        width:100%;
+        z-index: 1;
+    }
+    
+    nav:after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+    
+    nav li {
+        list-style-type: none;
+        float: right;
+        margin: 0 20px;
+        color: white;
+    }
 </style>
 
 <body>
     <div class='wrapper'>
         
+        <nav>
+            <ul>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+            </ul>
+        </nav>
         <div id='banner'>
             <img src='./cloud.jpeg' width='100%'>
             <h2>blue sky thinking</h2>
@@ -152,6 +181,7 @@
         <div class='helloSection'>
             <h1>hello world</h1>
         </div>
+        
     </div>
 </body>
 
